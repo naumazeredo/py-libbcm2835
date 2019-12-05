@@ -315,6 +315,9 @@ bcm2835_spi_transfernb.argtypes = [STRING, STRING, uint32_t]
 bcm2835_spi_transfern = _libraries['/usr/local/lib/libbcm2835.so'].bcm2835_spi_transfern
 bcm2835_spi_transfern.restype = None
 bcm2835_spi_transfern.argtypes = [STRING, uint32_t]
+bcm2835_spi_write = _libraries['/usr/local/lib/libbcm2835.so'].bcm2835_spi_write
+bcm2835_spi_write.restype = None
+bcm2835_spi_write.argtypes = uint16_t
 bcm2835_spi_writenb = _libraries['/usr/local/lib/libbcm2835.so'].bcm2835_spi_writenb
 bcm2835_spi_writenb.restype = None
 bcm2835_spi_writenb.argtypes = [STRING, uint32_t]
@@ -766,4 +769,5 @@ __all__ = ['BCM2835_SPI0_CS_ADCS', '_ATFILE_SOURCE',
            'BCM2835_SPI0_CS_LEN', 'bcm2835_peri_read_nb',
            'BCM2835_SPI0_DLEN', 'bcm2835_i2c_set_baudrate',
            'bcm2835_close', 'uint_fast32_t', 'BCM2835_SPI0_CS',
-           'BCM2835_SPI0_CS_TA', 'BCM2835_PAD_DRIVE_2mA']
+           'BCM2835_SPI0_CS_TA', 'BCM2835_PAD_DRIVE_2mA',
+           'bcm2835_spi_write' ]
